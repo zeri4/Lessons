@@ -60,16 +60,17 @@ let appData = { // создаем объект (далее поля объект
         }
     },
     chooseIncome: function () {
-
+        //let items;
+        //let add;
         do {
-            let items = prompt('Что принесет дополнительный доход? (перечислите через запятую)', "");
+          var items = prompt('Что принесет дополнительный доход? (перечислите через запятую)', "");
         }
         while (typeof (items) == null || items == '' || !isNaN(items));
 
         appData.income = items.split(', ');
 
         do {
-            let add = prompt('Может быть что-то ещё? (перечислите через запятую)');
+            var add = prompt('Может быть что-то ещё? (перечислите через запятую)');
         }
         while (typeof (add) == null || add == '' || !isNaN(add));
 
