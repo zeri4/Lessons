@@ -80,7 +80,7 @@ let appData = { // создаем объект (далее поля объект
       }
       
     }
-    //appData.income.sort();
+      appData.income.sort();
       break;
     }
     
@@ -94,6 +94,5 @@ appData.income.forEach(function(item, i , mass) {
 for (let key in appData) {
     console.log(key + ': ' + appData[key]);
     }
-// 3) Используя цикл for in для объекта (appData) вывести в консоль сообщение "Наша программа включает в себя данные: " (вывести весь appData)
 
 
